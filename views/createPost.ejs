@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Post</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+    <link rel="stylesheet" href="/output.css">
+</head>
+<body class="bg-black text-gray-300">
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <h2 class="text-white text-lg mb-4">Create Your Post</h2>
+            <div class="flex space-x-4">
+                <!-- Display uploaded image -->
+                <div class="relative w-500px h-500px overflow-hidden rounded-md bg-gray-800">
+                    <img src="<%= imageUrl %>" alt="Uploaded Image" class="w-1080px h-1080px rounded-md mb-4 object-cover">
+                </div>
+                <!-- Caption input -->
+                <form action="/submit-post" method="POST" class="flex flex-col space-y-4">
+                    <input type="hidden" name="imagePath" value="<%= filename %>">
+                    <textarea name="caption" class="bg-gray-800 text-white p-2 rounded-md" rows="4" placeholder="Write a caption..."></textarea>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

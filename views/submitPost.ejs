@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Post Submitted</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+    <link rel="stylesheet" href="/output.css">
+</head>
+<body class="bg-black text-gray-300">
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <h2 class="text-white text-lg mb-4">Your Post</h2>
+            <div class="relative w-64 h-64 overflow-hidden rounded-md bg-gray-800 mb-4">
+                <img src="/uploads/<%= imagePath %>" alt="Uploaded Image" class="absolute top-0 left-0 w-full h-full object-cover">
+            </div>
+            <p class="text-gray-300">Caption: <%= caption %></p>
+            <a href="/home" class="text-blue-500 mt-4 inline-block">Go Back</a>
+        </div>
+    </div>
+</body>
+</html>

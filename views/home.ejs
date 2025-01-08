@@ -1,0 +1,23 @@
+<!-- views/home.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="/output.css">
+</head>
+<body class="bg-black text-gray-300">
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg w-full max-w-2xl">
+            <h2 class="text-white text-lg mb-4">All Posts</h2>
+            <% posts.forEach(post => { %>
+                <div class="bg-gray-800 p-4 rounded-lg mb-6">
+                    <div class="relative w-full h-64 overflow-hidden rounded-md bg-gray-700">
+                        <img src="/uploads/<%= post.imagePath %>" alt="Post image" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-gray-300 mt-4">Caption: <%= post.caption %></p>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>
