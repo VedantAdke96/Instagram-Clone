@@ -2,7 +2,7 @@
 
 Created using **Express, NodeJs, MongoDB, Tailwind CSS**,...etc
 
-![Instagram Clone](https://i.imgur.com/hkCmdHW.png "Instagram Clone")
+![Instagram Clone](https://i.imgur.com/rlnyaog.png "Instagram Clone")
 
 #### What you need to run this code:
 1. Node (22.11.0)
